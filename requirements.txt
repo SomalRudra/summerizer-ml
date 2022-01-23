@@ -1,0 +1,5 @@
+bs4
+flask
+gunicorn
+pickle5
+pip-chill

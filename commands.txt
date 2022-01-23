@@ -1,0 +1,31 @@
+pip install virtualenv
+
+#Create virtualenv
+python3 -m venv venv
+
+#Create virtualenv for windows
+py -3 -m venv venv
+
+#Activate virualenv:
+(linux/MacOS) source sonkhipto_venv/bin/activate
+(windows) venv\Scripts\activate
+
+#Install Flask on the enviroment
+pip install flask
+
+#Tell the terminal what application to run
+(Linux/MacOS) export FLASK_APP=main.py
+(Windows) set FLASK_APP=main.py
+
+# To activate debug mode
+export FLASK_ENV=development
+
+
+#Run the application
+flask run
+
+#requirements installed this way
+pip install pip_chill
+pip-chill --no-version > requirements.txt
+
+export FLASK_APP=main.py && export FLASK_ENV=development && flask run
